@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:cornflowerblue;
+    margin: 0;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 20px solid cyan;
+    border-radius: 30%;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(206, 11, 11, 0.2);
+    background: white;
+    background-image: url('surendra.jpg');
+    background-size: cover;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); 
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+}
+
+.hour-hand {
+    height: 0.4rem;
+    width: 30%;
+    background-color: #000;
+    top: 50%;
+    left: 20%;
+}
+
+.minute-hand {
+    height: 2px;
+}
+
+.second-hand {
+    height: 2px;
+    background:chocolate;
+}
+
+.number {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
+.number1
+{  
+    top: 12%; 
+    left: 75%;
+    font-size: 4ch;
+    color: red;
+}
+.number2  
+{   
+     top: 30%;
+     left: 95%;
+     font-size: 4ch;
+    color: red;
+}
+.number3 
+{ 
+    top: 50%; 
+    left: 100%;
+    font-size: 4ch;
+    color: red; 
+}
+.number4 
+{ 
+    top: 70%; 
+    left: 99%;
+    font-size: 4ch;
+    color: red;
+}
+.number5  
+{
+     top: 90%; 
+     left: 85%;
+     font-size: 4ch;
+    color: red; 
+}
+.number6 
+{ 
+    top: 97%;
+     left: 50%;
+     font-size: 4ch;
+    color: red; 
+}
+.number7  
+{
+     top: 92%;
+      left: 20%;
+      font-size: 4ch;
+      color: red;
+}
+.number8  
+{ 
+    top: 70%; 
+    left: 7%;
+    font-size: 4ch;
+    color: red;
+}
+.number9  
+{ 
+    top: 49%;
+     left: 3%;
+     font-size: 4ch;
+     color: red;    
+}
+.number10 
+{  
+    top: 30%;  
+    left: 8%;
+    font-size: 4ch;
+    color: red; 
+}
+.number11 
+{ 
+    top: 10%; 
+    left: 20%;
+    font-size: 4ch;
+    color: red; 
+}
+.number12 
+{
+     top: 5%;
+      left: 50%;
+      font-size: 4ch;
+    color: red; 
+}
+p
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: black;
+    animation-name: clock;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes clock
+{
+  from{background-color: red;}
+  to{background-color: yellow;}  
+}
